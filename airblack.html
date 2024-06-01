@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirBlack</title>
+    <style>
+        *,
+        *::after,
+        *::before {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+       
+
+        .navcontainer {
+            width: 375px;
+            min-height: 124px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .navcontainer img {
+
+            object-fit: contain;
+            width: 100%;
+        }
+
+        .form-container {
+            background-color: #000000;
+            width: 375px;
+            padding: 10px;
+            margin-top: -5px;
+
+        }
+
+        .form-heading {
+            color: #FFFFFF;
+            font-size: 24px;
+            font-weight: 400;
+            width: 327px;
+            height: 100vh;
+            margin-top: 10px;
+
+        }
+
+        .btn-programme {
+            display: flex;
+            align-items: center;
+
+        }
+
+        .programme-btn {
+            background-color: grey;
+            align-items: center;
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .rated {
+
+            background-color: transparent;
+            text-decoration: none;
+            align-items: center;
+            padding: 5px;
+            border-radius: 5px;
+            color: #F7C852;
+
+            border: none;
+
+        }
+
+        .list-headings {
+            display: flex;
+            flex-direction: column;
+            color: white;
+
+            font-size: 14px;
+            font-weight: 400;
+            gap: 10px;
+            margin: 5px 5px;
+        }
+
+        .list-headings img {
+            object-fit: contain;
+            margin-right: 5px;
+        }
+
+        form {
+            border-top: 20px solid #E84D84;
+            border-radius: 10px;
+            height: 405px;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
+
+        form label {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        form input {
+            border: 1px solid #D9D9D9;
+            border-radius: 4px;
+            height: 35px;
+        }
+
+        form select {
+            border: 1px solid #D9D9D9;
+            border-radius: 4px;
+            height: 35px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            margin-top: 10px;
+            height: 36px;
+            background: linear-gradient(90.32deg, #F56563 0%, #E54988 100%);
+            color: #FFFFFF;
+            border-radius: 4px;
+            font-Weight: 700;
+            font-Size: 14px;
+            z-index: 22;
+            border: none;
+        }
+
+        .certificate {
+            background-color: #000000;
+            min-height: 416px;
+            width: 375px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #red{
+            margin-top: 20px;
+        }
+
+        .certificate span {
+            color: #ffffff;
+            font-Weight: 400;
+            font-Size: 24px;
+           
+        }
+
+        .certificate img {
+            object-fit: contain;
+            height: 252px;
+            width: 100%;
+        }
+
+        footer {
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            background-color: #000000;
+            height: 332px;
+            width: 375px;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 24px;
+            font-weight: 400;
+            justify-content: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            z-index: 1;
+        }
+
+        .bkg {
+            position: absolute;
+            width: 375px;
+           height: 332px;
+            background-image: url("./MixCollage-01-Jun-2024-01-36-PM-6030.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: 1;
+            opacity: 0.2;
+        }
+
+        .zoom-icon {
+            display: flex;
+            z-index: 1;
+            align-items: center;
+        }
+
+        .apply-btn {
+            width: 307px;
+            height: 36px;
+            background: linear-gradient(90.32deg, #F56563 0%, #E54988 100%);
+            color: #FFFFFF;
+            border-radius: 4px;
+            font-Weight: 700;
+            font-Size: 14px;
+            z-index: 22;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navcontainer">
+        <img src="./Image.jpg" />
+    </div>
+    <div class="form-container">
+        <span class="form-heading">
+            Professional Online
+            <br> Makeup Course
+        </span>
+        <div class="btn-programme">
+            <button class="programme-btn"> <img src="./SVG.png" /> Certificate Programme</button><button
+                class="rated"><img src="./Vector.png
+                " />Rated 4.85/5</button>
+        </div>
+        <div class="list-headings">
+            <span><img src="./svg78612104_852.png" />India’s No.1 Online Makeup Course</span>
+            <span><img src="./svg78612104_852.png" />Learn by LIVE Do-it-Together Classes</span>
+            <span><img src="./svg78612104_852.png" />Unlimited Practise Session to master skills</span>
+        </div>
+        <form>
+            <label>*Enter your name </label>
+            <input class="text" type="text" placeholder="enter text here " />
+
+            <label>*Enter your WhatsApp Number</label>
+            <input type="text" placeholder="enter text here " />
+
+            <label>*Select your profession</label>
+            <select>
+                <option value="Choose the most relevant option">Choose the most relevant option</option>
+                <option value="Student">Student</option>
+                <option value="Make-up artist">Make-up artist</option>
+                <option value="Theatrical makeup">Theatrical makeup</option>
+                <option value="Special effects artist">Special effects artist</option>
+                <option value="Bridal makeup artist">Bridal makeup artist</option>
+                <option value="Makeup vlogger">Makeup vlogger</option>
+                <option value="Theatrical makeup">Theatrical makeup</option>
+                <option value="Beauty influencer">Beauty influencer</option>
+            </select>
+
+            <label>*Select your goal</label>
+            <select>
+                <option value="Choose the most relevant option">Choose the most relevant option</option>
+                <option value="I want to become a makeup artist">I want to become a makeup artist</option>
+                <option value="I am already a Mua and looking to get better">I am already a Mua and looking to get
+                    better </option>
+                <option value="I want to learn for my own makeup">I want to learn for my own makeup</option>
+                <option value="I want to learn for instagram blogging">I want to learn for instagram blogging</option>
+                <option value="I am just exploring">I am just exploring </option>
+            </select>
+
+            <label>*Select your city</label>
+            <select>
+                <option value="Choose the most relevant option">Choose the most relevant option</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Gurgaon">Gurgaon</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Noida">Noida</option>
+                <option value="Lucknow">Lucknow</option>
+                <option value="Bengaluru">Bengaluru</option>
+            </select>
+
+            <button class="submit-btn">Submit</button>
+        </form>
+    </div>
+    <div class="join">
+        <img class="bkg" src="./MixCollage-01-Jun-2024-01-36-PM-6030.jpg" />
+        <footer>
+            <span>Why Should You
+            </span>
+            <span> Join Airblack? </span>
+
+            <div class="zoom-icon">
+                <img src="./zoom.png" />
+                <img src="./star.png" />
+                <img src="./people.png" />
+            </div>
+
+            <button class="apply-btn">Apply Now</button>
+        </footer>
+    </div>
+    <div class="certificate">
+        <span id="red">Get Certified From</span>
+        <span> India’s Biggest</span>
+        <span> Beauty Platform</span>
+        <img src="./image 676.png" />
+    </div>
+    <img class="bkg" src="./MixCollage-01-Jun-2024-01-36-PM-6030.jpg" />
+    <footer>
+        <span>Join our growing </span>
+        <span> community of </span>
+        <span> 35,000+ alumni</span>
+
+        <button class="apply-btn">Apply Now</button>
+        <div class="logo">
+            <img src="./Instagram.png" />
+            <img src="./image 487.png" />
+            <img src="./Linkedin.png" />
+            <img src="./image 488.png" />
+        </div>
+    </footer>
+</body>
+
+</html>
